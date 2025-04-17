@@ -1,0 +1,11 @@
+fonk kontrol_ciz a:
+{
+    eger a > 0 ise {
+        daire_ciz a a 5
+    } aksi {
+        dikdortgen_ciz a a 2 2
+    }
+}
+knof
+
+kontrol_ciz(10)

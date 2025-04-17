@@ -1,0 +1,12 @@
+sayi <- input
+
+i <- 1
+
+dongu i <= sayi iken {
+    print i
+    eger i = 10 ise {
+        break
+    }
+    i +<- 1
+} neki
+

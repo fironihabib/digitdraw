@@ -1,0 +1,8 @@
+dongu x <> 1 iken {
+    eger x % 2 = 0 ise {
+        x <- x / 2
+    } aksi {
+        x <- 3 * x + 1
+    }
+} neki
+

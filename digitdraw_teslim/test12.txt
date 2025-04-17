@@ -1,0 +1,8 @@
+eger tus_basildi TUS_YUKARI ise {
+    eger oyuncu_y < 100 ise {
+        oyuncu_y +<- 10
+        daire_ciz oyuncu_x oyuncu_y 5
+    } aksi {
+        oyuncu_y <- 0
+    }
+}

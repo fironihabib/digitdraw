@@ -1,0 +1,10 @@
+x <- 10
+eger x > 5 ise {
+    eger x < 15 ise {
+        print "orta"
+    } aksi {
+        print "büyük"
+    }
+} aksi {
+    print "küçük"
+}

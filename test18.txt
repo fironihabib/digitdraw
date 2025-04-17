@@ -1,0 +1,3 @@
+liste <- list [ "merhaba", "dünya" ]
+print liste[1]
+

@@ -1,0 +1,3 @@
+-- Açıklama satırı
+x <- x + 3
+

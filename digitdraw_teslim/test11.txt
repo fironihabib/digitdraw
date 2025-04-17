@@ -1,0 +1,3 @@
+sonuc <- (a < b) ve (c > d)
+sonuc2 <- degil (x = y)
+

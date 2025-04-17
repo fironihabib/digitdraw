@@ -1,0 +1,10 @@
+i <- 0
+
+dongu i < 10 iken {
+    i +<- 1
+    eger i % 2 = 1 ise {
+        continue
+    }
+    print i
+} neki
+

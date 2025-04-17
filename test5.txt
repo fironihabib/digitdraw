@@ -1,0 +1,8 @@
+fonk topla a b:
+{
+    dondur a + b
+}
+knof
+
+topla(3, 5)
+

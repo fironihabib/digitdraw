@@ -1,0 +1,15 @@
+eger tus_basildi TUS_YUKARI ise {
+    oyuncu_y +<- 5
+}
+eger tus_basildi TUS_ASAGI ise {
+    oyuncu_y -<- 5
+}
+eger tus_basildi TUS_SOLA ise {
+    oyuncu_x -<- 5
+}
+eger tus_basildi TUS_SAGA ise {
+    oyuncu_x +<- 5
+}
+
+oyuncu_cizdir(oyuncu_x, oyuncu_y)
+

@@ -1,0 +1,9 @@
+eger x = 0 ise {
+    eger y = 0 ise {
+        z <- 1
+    } aksi {
+        z <- 2
+    }
+} aksi {
+    z <- 3
+}

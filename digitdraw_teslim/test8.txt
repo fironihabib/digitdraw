@@ -1,0 +1,10 @@
+fonk tekrar_ciz x:
+{
+    cizgi_ciz 0 x 10 x
+}
+knof
+
+dongu i < 5 iken {
+    tekrar_ciz(i)
+    i +<- 1
+} neki

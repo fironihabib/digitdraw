@@ -1,0 +1,10 @@
+fonk yazdir liste:
+{
+    print liste[0]
+    print liste[1]
+}
+knof
+
+liste <- list["merhaba", "dünya"]
+yazdir(liste)
+

@@ -1,0 +1,7 @@
+fonk bos_fonk:
+{
+}
+knof
+
+bos_fonk()
+
