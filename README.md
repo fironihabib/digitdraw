@@ -67,8 +67,6 @@ Projede 20 farklı test dosyası yer almakta ve tümü başarıyla gramer kontro
 ## 🧑‍💻 Geliştirici
 
 **Fironi Habibzade**  
-📫 GitHub: [@fironihabib](https://github.com/fironihabib)  
-🎓 Java, DSL, yazılım mühendisliği ve grafik tabanlı diller üzerine çalışmaktadır.
 
 ## 🗃️ Lisans
 
