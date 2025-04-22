@@ -1,74 +1,78 @@
-# 🎨 DigitDraw DSL - Özel Bir Çizim Dili
+🎨 DigitDraw DSL - A Custom Drawing Language
+DigitDraw is designed as a domain-specific language (DSL). This language allows you to create your own graphical programming language with drawing commands, function definitions, conditional statements, loops, and more.
 
-DigitDraw, özel bir **domain-specific language (DSL)** olarak tasarlanmıştır. Bu dil; çizim komutları, fonksiyon tanımı, koşullu ifadeler, döngüler ve daha fazlasıyla kendi grafiksel programlama dilinizi oluşturmanıza olanak tanır.
+📜 About the Project
+This project covers all phases of language design:
 
-## 📜 Proje Hakkında
+Lexer (lexer.l): Defines the tokens from the input file.
 
-Bu proje, bir dilin tüm aşamalarını kapsar:
-- **Lexer (lexer.l)**: Girdi dosyasındaki kelimeleri tanımlar (token'lar).
-- **Parser (parser.y)**: Gramer kurallarına göre token'ları yorumlar.
-- **Örnek Test Dosyaları**: 20 farklı `.txt` dosyası ile dil yapısı test edilmiştir.
-- **Rapor**: Projenin özelliklerini ve dilin açıklamasını içeren bir `rapor.docx` dosyası vardır.
+Parser (parser.y): Interprets tokens according to grammar rules.
 
-## 🧠 Dil Özellikleri
+Sample Test Files: The language structure is tested with 20 different .txt files.
 
-DigitDraw dili şu yapıları destekler:
+Report: Includes a report.docx file explaining the project's features and the language design.
 
-- 🔢 **Atama ve artırmalı atama**: `<-`, `=<-`, `+<-`, `-<-`
-- 📌 **Koşullu ifadeler**: `eger`, `ise`, `aksi`
-- 🔁 **Döngü yapıları**: `dongu`, `iken`, `neki`, `for`, `to`
-- 🔧 **Fonksiyon tanımlama ve çağırma**: `fonk`, `knof`, `ID(...)`
-- 📦 **Liste tanımı ve indeksleme**: `list[1, 2]`, `liste[0]`
-- 🖌️ **Çizim komutları**: `daire_ciz`, `cizgi_ciz`, `dikdortgen_ciz`, `ucgen_ciz`
-- ⌨️ **Klavye kontrolü**: `tus_basildi`, `TUS_YUKARI`, vb.
-- 🎯 **Akış kontrolü**: `break`, `continue`, `dondur`
-- 🔄 **switch-case yapısı**
-- 📥📤 **Giriş/Çıkış**: `input`, `print`
+🧠 Language Features
+DigitDraw language supports the following structures:
 
-## 🔧 Derleme ve Çalıştırma
+🔢 Assignment and augmented assignment: <-, =<-, +<-, -<-
 
-Aşağıdaki komutlar Linux terminalinde projenizi derleyip çalıştırmak için kullanılır:
+📌 Conditional statements: eger (if), ise (then), aksi (else)
 
-```bash
-# Derleme adımları:
+🔁 Loop structures: dongu (while), iken (while), neki (do-while), for, to
+
+🔧 Function definition and call: fonk (function), knof (end function), ID(...)
+
+📦 List definition and indexing: list[1, 2], list[0]
+
+🖌️ Drawing commands: daire_ciz (draw_circle), cizgi_ciz (draw_line), dikdortgen_ciz (draw_rectangle), ucgen_ciz (draw_triangle)
+
+⌨️ Keyboard control: tus_basildi (key_pressed), TUS_YUKARI (KEY_UP), etc.
+
+🎯 Flow control: break, continue, dondur (return)
+
+🔄 Switch-case structure
+
+📥📤 Input/Output: input, print
+
+🔧 Compilation and Execution
+Use the following commands to compile and run the project in a Linux terminal:
+
+bash
+Copy
+Edit
+# Compilation steps:
 bison -d parser.y
 flex lexer.l
 gcc -o digitdraw parser.tab.c lex.yy.c -lfl
 
-# Test çalıştırması:
+# Running a test:
 ./digitdraw < test1.txt
-```
+To automatically run all tests:
 
-Tüm testleri otomatik çalıştırmak için:
-
-```bash
+bash
+Copy
+Edit
 for i in {1..20}; do
   echo "----- test$i.txt -----"
   ./digitdraw < test$i.txt
 done
-```
-
-## 📁 Proje Yapısı
-
-```
+📁 Project Structure
+bash
+Copy
+Edit
 digitdraw/
-├── lexer.l               # Token tanımları
-├── parser.y              # BNF gramer kuralları
-├── rapor.docx            # Proje raporu
-├── digitdraw             # Derlenmiş çalıştırılabilir dosya
-├── test1.txt ~ test20.txt # Test girdileri
-└── README.md             # Bu açıklama dosyası
-```
+├── lexer.l               # Token definitions
+├── parser.y              # BNF grammar rules
+├── report.docx           # Project report
+├── digitdraw             # Compiled executable
+├── test1.txt ~ test20.txt # Test inputs
+└── README.md             # This description file
+🧪 Test Files
+The project includes 20 different test files, all of which successfully pass grammar validation (including tests 18-20).
 
-## 🧪 Test Dosyaları
+🧑‍💻 Developer
+Fironi Habibzade
 
-Projede 20 farklı test dosyası yer almakta ve tümü başarıyla gramer kontrolünden geçmektedir (test18-20 dahil).
-
-## 🧑‍💻 Geliştirici
-
-**Fironi Habibzade**  
-
-## 🗃️ Lisans
-
-Bu proje akademik bir ödev kapsamında geliştirilmiştir. Kişisel kullanım içindir.
-
+🗃️ License
+This project was developed as part of an academic assignment. It is intended for personal use.
